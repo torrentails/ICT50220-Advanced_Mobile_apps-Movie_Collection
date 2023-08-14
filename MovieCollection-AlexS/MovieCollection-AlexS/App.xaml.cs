@@ -11,6 +11,9 @@ namespace MovieCollection_AlexS
             InitializeComponent();
 
             MainPage = new MainPage();
+
+            TestMovieOwner tests = new TestMovieOwner();
+            tests.RunTests();
         }
 
         protected override void OnStart()
