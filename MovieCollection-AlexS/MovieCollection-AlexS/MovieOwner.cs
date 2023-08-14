@@ -37,5 +37,67 @@ namespace MovieCollection_AlexS
 
             return rating / numMovies;
         }
+
+        public List<Movie> MoviesOfContentRating(ContentRating contentRating)
+        {
+            List<Movie> moviesToReturn = new List<Movie>();
+
+            foreach (Movie movie in movies)
+            {
+                if (movie.contentRating == contentRating)
+                {
+                    moviesToReturn.Add(movie);
+                }
+            }
+
+            return moviesToReturn;
+        }
+
+        public List<Movie> UnratedMovies()
+        {
+            List<Movie> moviesToReturn = new List<Movie>();
+
+            foreach (Movie movie in movies)
+            {
+                if (!movie.hasBeenRated)
+                {
+                    moviesToReturn.Add(movie);
+                }
+            }
+
+            return moviesToReturn;
+        }
+
+        public List<Movie> MoviesGreaterThanRating(float rating, bool ignoreUnrated = true)
+        {
+            List<Movie> moviesToReturn = new List<Movie>();
+
+            foreach (Movie movie in movies)
+            {
+                if ((!ignoreUnrated || movie.hasBeenRated)
+                    && movie.getRating() >= rating)
+                {
+                    moviesToReturn.Add(movie);
+                }
+            }
+
+            return moviesToReturn;
+        }
+
+        public List<Movie> MoviesLessThanRating(float rating, bool ignoreUnrated = true)
+        {
+            List<Movie> moviesToReturn = new List<Movie>();
+
+            foreach (Movie movie in movies)
+            {
+                if ((!ignoreUnrated || movie.hasBeenRated)
+                    && movie.getRating() <= rating)
+                {
+                    moviesToReturn.Add(movie);
+                }
+            }
+
+            return moviesToReturn;
+        }
     }
 }
