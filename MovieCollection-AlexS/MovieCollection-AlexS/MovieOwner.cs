@@ -127,5 +127,22 @@ namespace MovieCollection_AlexS
 
             return (movie, duration);
         }
+
+        public (Movie movie, int duration) GetShortestMovie()
+        {
+            Movie movie = null;
+            int duration = int.MaxValue;
+
+            foreach (Movie curMovie in movies)
+            {
+                if (curMovie.duration < duration)
+                {
+                    movie = curMovie;
+                    duration = curMovie.duration;
+                }
+            }
+
+            return (movie, duration);
+        }
     }
 }
