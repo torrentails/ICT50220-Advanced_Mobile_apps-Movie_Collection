@@ -110,5 +110,22 @@ namespace MovieCollection_AlexS
 
             return duration / movies.Count;
         }
+
+        public (Movie movie, int duration) GetLongestMovie()
+        {
+            Movie movie = null;
+            int duration = 0;
+
+            foreach (Movie curMovie in movies)
+            {
+                if (curMovie.duration > duration)
+                {
+                    movie = curMovie;
+                    duration = curMovie.duration;
+                }
+            }
+
+            return (movie, duration);
+        }
     }
 }
