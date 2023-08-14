@@ -149,9 +149,9 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MovieCollection-AlexS\MovieCollection-AlexS.csproj">
-      <Project>{863F29E4-E67C-4FDD-B0A2-E8799C08E384}</Project>
-      <Name>MovieCollection-AlexS</Name>
+    <ProjectReference Include="..\MovieCollection-AlexS\MovieCollection_AlexS.csproj">
+      <Project>{7905B3AA-265B-4EA0-8DF1-3C4E766E8794}</Project>
+      <Name>MovieCollection_AlexS</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

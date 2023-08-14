@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCollection-AlexS.UWP", "MovieCollection-AlexS\MovieCollection-AlexS.UWP\MovieCollection-AlexS.UWP.csproj", "{375A19D0-88EE-4226-A8FF-283ACDA0FC39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCollection_AlexS.UWP", "MovieCollection-AlexS\MovieCollection-AlexS.UWP\MovieCollection_AlexS.UWP.csproj", "{375A19D0-88EE-4226-A8FF-283ACDA0FC39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCollection-AlexS.Android", "MovieCollection-AlexS\MovieCollection-AlexS.Android\MovieCollection-AlexS.Android.csproj", "{032D341C-8897-41D0-A2B4-6C0DA3F60462}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCollection_AlexS.Android", "MovieCollection-AlexS\MovieCollection-AlexS.Android\MovieCollection_AlexS.Android.csproj", "{032D341C-8897-41D0-A2B4-6C0DA3F60462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCollection-AlexS.iOS", "MovieCollection-AlexS\MovieCollection-AlexS.iOS\MovieCollection-AlexS.iOS.csproj", "{F0980871-69A0-4BFE-B35A-62C1159FE068}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCollection_AlexS.iOS", "MovieCollection-AlexS\MovieCollection-AlexS.iOS\MovieCollection_AlexS.iOS.csproj", "{F0980871-69A0-4BFE-B35A-62C1159FE068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCollection-AlexS", "MovieCollection-AlexS\MovieCollection-AlexS\MovieCollection-AlexS.csproj", "{7905B3AA-265B-4EA0-8DF1-3C4E766E8794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCollection_AlexS", "MovieCollection-AlexS\MovieCollection-AlexS\MovieCollection_AlexS.csproj", "{7905B3AA-265B-4EA0-8DF1-3C4E766E8794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
