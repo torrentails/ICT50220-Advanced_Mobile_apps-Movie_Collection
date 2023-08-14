@@ -18,7 +18,7 @@ namespace MovieCollection_AlexS
     internal class Movie
     {
         public String name;
-        public int duration;
+        public int duration; // in minutes, rounded to nearest int
         public int year;
         public String movieStar;
         public ContentRating contentRating;
@@ -26,19 +26,23 @@ namespace MovieCollection_AlexS
 
         float rating = 0;
 
-        public Movie(string name, int duration, int year, string movieStar, float starRating, ContentRating rating)
+        public Movie(string name, int duration, int year, string movieStar, ContentRating contentRating)
         {
             this.name = name;
             this.duration = duration;
             this.year = year;
             this.movieStar = movieStar;
-            this.contentRating = rating;
-            this.setRating(starRating);
+            this.contentRating = contentRating;
+            //this.setRating(rating);
+        }
+        public Movie(string name, int duration, int year, string movieStar, ContentRating contentRating, float rating) : this(name, duration, year, movieStar, contentRating)
+        {
+            setRating(rating);
         }
 
-        public float getRating()
+            public float getRating()
         {
-            return this.rating;
+            return rating;
         }
 
         public void setRating(float rating)
