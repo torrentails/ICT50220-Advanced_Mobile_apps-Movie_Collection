@@ -99,5 +99,16 @@ namespace MovieCollection_AlexS
 
             return moviesToReturn;
         }
+
+        public float AverageDuration()
+        {
+            float duration = 0f;
+            foreach (Movie movie in movies)
+            {
+                duration += movie.duration;
+            }
+
+            return duration / movies.Count;
+        }
     }
 }
